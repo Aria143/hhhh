@@ -1,5 +1,5 @@
 python-telegram-bot==13.7
 transformers
-tensorflow==2.12.0
+
 
 
