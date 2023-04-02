@@ -44,7 +44,7 @@ if __name__ == '__main__':
     updater.start_webhook(listen="0.0.0.0",
                           port=args.port,
                           url_path=bot_token)
-    updater.bot.setWebhook(url="https://your-heroku-app-name.herokuapp.com/" + bot_token)
+    updater.bot.setWebhook(url="https://hgfhhj.herokuapp.com/" + bot_token)
 
     # Start the server
     updater.idle()
