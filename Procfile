@@ -1,3 +1,3 @@
-web: python your_file_name.py --timeout 120
+web: python your_file_name.py $PORT
 
 
