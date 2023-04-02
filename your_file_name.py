@@ -34,7 +34,7 @@ dispatcher = updater.dispatcher
 dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
 
 # Start the bot
-port = int(os.environ.get("PORT",8443))
+port = int(os.environ.get("PORT",443))
 updater.start_webhook(listen="0.0.0.0", port=port, url_path=bot_token)
 updater.bot.setWebhook(os.getenv("APP_URL") + bot_token)
 updater.idle()
