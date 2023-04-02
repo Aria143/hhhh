@@ -34,7 +34,7 @@ dispatcher = updater.dispatcher
 dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
 
 # Set up Heroku port and webhook
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT',8443))
 updater.start_webhook(listen="0.0.0.0",
                       port=port,
                       url_path=bot_token)
