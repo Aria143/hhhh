@@ -1,2 +1,3 @@
-web: echo "PORT=$PORT" && python your_file_name.py
+web: python your_file_name.py --timeout 120
+
 
